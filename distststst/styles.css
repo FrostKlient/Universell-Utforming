@@ -1,7 +1,7 @@
 :root {
     font-family: "Segoe UI", Arial, sans-serif;
     color: #2b3d46;
-    background: #d5dbe2;
+    background: #ffffff;
     --blekknmr1: #284114;
     --bgnmr1: #d0e4a3;
     --blekknmr2: #701c42;
@@ -13,8 +13,8 @@
 body {
     max-width: 1100 px;
     margin: 16px auto;
-    border: 1px solid #000000;
-    background: #000000;
+    border: 1px solid #8595a5;
+    background: #ffffff;
     line-height: 1.6;
 }
 h1 {
@@ -120,7 +120,7 @@ dialog p { margin: 16px; }
 body:has(dialog[open]) { overflow: hidden; }
 @media (max-width: 700px) {
     article { grid-template-columns: minmax(0, 1fr); }
-    article img { grid-column 1; grid-row: auto; max-width: 360px; justify-self: center; }
+    article img { grid-column: 1; grid-row: auto; max-width: 360px; justify-self: center; }
     th, td { padding: 6px 4px; overflow-wrap: anywhere; }
     table { table-layout: fixed; font-size: 0.8rem; }
 }
