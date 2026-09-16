@@ -11,7 +11,7 @@
 }
 * { box-sizing: border-box; }
 body {
-    max-width: 1100 px;
+    max-width: 1100px;
     margin: 16px auto;
     border: 1px solid #8595a5;
     background: #ffffff;
@@ -88,7 +88,7 @@ caption { text-align: left; padding-block: 8px; }
 th, td { padding: 8px; border: 1px solid #7f92a3; }
 code { font-family: Consolas, monospace; overflow-wrap: anywhere; }
 dialog {
-    width: min(640, calc(100% - 24px));
+    width: min(640px, calc(100% - 24px));
     max-height: calc(100% - 24px);
     padding: 0;
     border: 1px solid #7f92a3;
@@ -96,7 +96,7 @@ dialog {
     background: #d8eafa;
     overflow: auto;
 }
-dialog::backdrop { background: rgb (00 00 00 / 50%); }
+dialog::backdrop { background: rgb (39 56 73 / 50%); }
 .kildeheader {
     display: flex;
     align-items: flex-start;
