@@ -24,8 +24,8 @@ C++ scriptet er tilpasset HTML og CSS-strukturen i bare dette prosjektet, og er 
 
 [Oppgavetekst](https://github.com/CecilieBreivang/Universell-utforming---HTML-og-CSS). Fagkildene er lenket nederst på nettsiden.
 
-
-# hær er en Trekant btw:
+> [!CAUTION]
+> # hær er en kul Trekant btw:
 
 ```stl
 solid cube_corner
@@ -59,9 +59,9 @@ solid cube_corner
   endfacet
 endsolid
 ```
-
-# kjedet meg litt mer så hær er skolen vår:
-
+---
+> [!TIP]
+> # kjedet meg litt mer så hær er skolen vår:
 ```geojson
 {
   "type": "FeatureCollection",
