@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="260" viewBox="0 0 360 260">
-  <title>Uu-tilsynets fire hovedoppgaver</title>
-  <rect width="360" height="260" fill="#F5D97B"/>
-  <g fill="none" stroke="#503510" stroke-width="1.5"><rect x="26" y="15" width="308" height="40"/><rect x="26" y="65" width="308" height="40"/><rect x="26" y="115" width="308" height="40"/><rect x="26" y="165" width="308" height="40"/><path d="M180 205v16m-6-7 6 7 6-7"/></g>
-  <g fill="#503510" font-family="Segoe UI,Arial,sans-serif" font-size="17"><text x="43" y="41">01</text><text x="88" y="41" font-weight="600">Kontrollere</text><text x="43" y="91">02</text><text x="88" y="91" font-weight="600">Veilede</text><text x="43" y="141">03</text><text x="88" y="141" font-weight="600">Kartlegge</text><text x="43" y="191">04</text><text x="88" y="191" font-weight="600">Bidra til faglig utvikling</text><text x="180" y="246" text-anchor="middle" font-size="16">Mer tilgjengelig ikt</text></g>
-</svg>

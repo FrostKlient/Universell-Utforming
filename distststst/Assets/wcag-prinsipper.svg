@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="260" viewBox="0 0 360 260">
+  <title>Fire prinsipper for tilgjengelig nettinnhold</title>
+  <rect width="360" height="260" fill="#d0e4a3"/>
+  <g stroke="#284114" fill="none" stroke-width="1.5"><path d="M95 85v27h170V85M180 112v25M95 198v-25h170v25M180 173v-12"/><rect x="20" y="25" width="150" height="60"/><rect x="190" y="25" width="150" height="60"/><rect x="20" y="198" width="150" height="42"/><rect x="190" y="198" width="150" height="42"/></g>
+  <rect x="56" y="130" width="248" height="38" fill="#284114"/>
+  <g fill="#284114" font-family="Segoe UI,Arial,sans-serif" font-size="16" text-anchor="middle"><text x="95" y="51">Mulig å</text><text x="95" y="72" font-weight="600">oppfatte</text><text x="265" y="51">Mulig å</text><text x="265" y="72" font-weight="600">betjene</text><text x="95" y="225" font-weight="600">Forståelig</text><text x="265" y="225" font-weight="600">Robust</text></g>
+  <text x="180" y="154" text-anchor="middle" fill="#d0e4a3" font-family="Segoe UI,Arial,sans-serif" font-size="16">Tilgjengelig nettinnhold</text>
+</svg>

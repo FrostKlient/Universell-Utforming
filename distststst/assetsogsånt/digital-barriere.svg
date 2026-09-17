@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="260" viewBox="0 0 360 260">
-  <title>En digital barriere kan stoppe en jobbsøknad</title>
-  <rect width="360" height="260" fill="#F1C1D7"/>
-  <g fill="#611638" font-family="Segoe UI,Arial,sans-serif" font-size="15"><text x="22" y="32" font-weight="700">NÅR KNAPPEN KREVER MUS</text><text x="22" y="149" font-weight="700">NÅR TASTATURET OGSÅ VIRKER</text></g>
-  <g stroke="#611638" stroke-width="1.5" fill="none"><rect x="22" y="48" width="145" height="49"/><path d="M167 73h34m-7-6 7 6-7 6"/><rect x="212" y="48" width="126" height="49"/><path d="M22 123h316"/><rect x="22" y="165" width="145" height="49"/><path d="M167 190h34m-7-6 7 6-7 6"/></g>
-  <rect x="212" y="165" width="126" height="49" fill="#611638"/>
-  <g fill="#611638" font-family="Segoe UI,Arial,sans-serif" font-size="16" text-anchor="middle"><text x="94" y="78">Tastaturbruker</text><text x="275" y="78" font-weight="700">× Stopp</text><text x="94" y="195">Tastaturbruker</text></g>
-  <text x="275" y="195" fill="#F1C1D7" font-family="Segoe UI,Arial,sans-serif" font-size="16" text-anchor="middle">✓ Sendt</text>
-</svg>

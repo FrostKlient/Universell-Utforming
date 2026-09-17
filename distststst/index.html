@@ -8,7 +8,7 @@
         <script src="kilder.js" defer> </script>
     </head>
     <body>
-        <a class="skip-link" href="#hovedinnhold">Hopp til hovedinnhold</a>
+        <a class="skip-link" href="#hovedinnhold">Hopp til hovedinnholdet</a>
         <header>
             <h1>Universell utforming</h1>
             <nav aria-label="Innhold">
@@ -22,40 +22,40 @@
         <main id="hovedinnhold" tabindex="-1">
             <article class="del-1" id="del-1">
                 <h2>1. Hva menes med universell utforming, og hva står WCAG for?</h2>
-                <p>Gjør dette etterpå, gidder ikke å svare nå, må gjøre research og sånt</p> <!-- fiks etterpå når jeg har tid -->
-                <p>Web Content Accessibility Guidelines (WCAG) er et sett med retningslinjer for å gjøre nettsider og nettinnhold tilgjengelig for alle.
-                   Det bygger på universell utforming, som betyr å utforme produkter, miljøer og tjenester slik at alle kan bruke dem i størst mulig grad.</p>
-                <img src="Assets/wcag-prinsipper.svg" width="360" height="260" alt="De fire WCAG-prinsippene"> <!-- fiks etterpå PLIS HENRIK -->
+                <p>Universell utforming betyr at produkter, tjenester, og miljøer, skal kunne bli brukt uavhengig av funksjonsevne. På nett kan det for eksempel være lesbar tekst, alt-tekst til bilder eller at siden kan brukes med tastatur.</p>
+                 <p>Web Content Accessibility Guidelines (WCAG) er de som lager rettningslinjene for universell utforming på nettsider og slikt (at alle skal kunne bruke det). De har både engelsk og norske guider jeg har lest gjennom.</p>
+                <img src="Assets/wcag-prinsipper.svg" width="360" height="260" alt="De fire WCAG-prinsippene: mulig å oppfatte, mulig å bruke, forståelig og robust. Ilag så bidrar de til tilgjengelig nettinnhold for alle">
             </article>
             <article class="del-2" id="del-2">
                 <h2>2. Hva kan være en konsekvens dersom vi lar være å forholde oss til universell utforming (enten på nett eller i virkeligheten)?</h2>
-                <p>Gjør det etterpå Henrik</p>
-                <p>Virkeligheten kaller Henrik GJØR DETTE ETTERPÅ PLIS IKKE GLEM DET</p>
-                <img src="Assets/digital-barriere.svg" width="360" height="260" alt="finn ut av det henrik">
+                <p>En konsekvens jeg tenker på er jo at noen blir utestengt fra tjenester andre kan bruke.</p>
+                <p>For eksempel trapper uten rulletrapp kan stoppe en person i rullestol ifra å få tilgang til lokalet.</p>
+                <img src="Assets/digital-barriere.svg" width="360" height="260" alt="En jobbsøknad kan ikke bli levert inn når knappen krever mus og din er ødelagt for eksempel. Hvis knappen også støtter tastatur, så kan noen uten mus også sende inn jobbsøknad.">
             </article>
             <article class="del-3" id="del-3">
                 <h2>3. Hvem er Uu-tilsynet, og hva er deres primæroppgaver?</h2>
-                <p>Gjør det hær ogspå henrik</p>
-                <p>dette også</p>
-                <img src="Assets/tilsynets-oppgaver.svg" width="360" height="260" alt="finn ut av det henrikkr">
+                <p>Det er tilsynet for universell utforming av ikt. De kontrollerer at nettsider, apper, og selvbetjente tjenester følger universell utforming ut ifra regelverket til WCAG av W3C.</p>
+                <p>De hjelper også virksomheter med å følge kravene, skriver ned status for digital tilgjengelighet og hjelper til med universell utforming.</p>
+                <img src="Assets/tilsynets-oppgaver.svg" width="360" height="260" alt="UU-tilsynets fire hovedoppgaver: Kontrollere, hjelpe, kartlegge, og bidra til faglig utvikling.">
             </article>
         </main>
         <footer>
             <section id="kontrastlogg">
                 <h2>Kontrast</h2>
-                <p>WCAG greier og hvordan det ble målt</p>
+                <p>Ble målt med mitt egent C++ script som bruker WCAG sin luminansformel i <code>Kontrast.cpp</code>. Alle tekstfargepar er vist ⇩under⇩ og alle passerer AA-kravet på minst 4,5 : 1. Verdiene er kortet ned til 2 desimaler, bare les i <code>dokumentasjon/kontrast-rapport.json</code> for flere desimaler.</p>
                 <table>
                     <caption>Tekst mot bakgrunn</caption>
                     <thead><tr><th scope="col">Område</th><th scope="col">Tekst</th><th scope="col">Bakgrunn</th><th scope="col">Kontrast</th></tr></thead>
                     <tbody>
-                        <tr><th scope="row">Del 1</th><td>#284114</td><td>#d0e4a3</td><td>9,85 : 1</td></tr>
-                        <tr><th scope="row">Del 2</th><td>#701c42</td><td>#ecc0d5</td><td>7,94 : 1</td></tr>                        
-                        <tr><th scope="row">Del 3</th><td>#553810</td><td>#ecd071</td><td>8,12 : 1</td></tr>
-                        <tr><th scope="row">Øvrig tekst</th><td>#2b3d46</td><td>#8595a5</td><td>10,58 : 1</td></tr>
-                        <tr><th scope="row">Tittellinjer</th><td>#ffffff</td><td>#004e8a</td><td>6,69 : 1</td></tr>
+                        <tr><th scope="row">Del 1</th><td>#284114</td><td>#d0e4a3</td><td>8,24 : 1</td></tr>
+                        <tr><th scope="row">Del 2</th><td>#701c42</td><td>#ecc0d5</td><td>6,75 : 1</td></tr>                        
+                        <tr><th scope="row">Del 3</th><td>#553810</td><td>#ecd071</td><td>7,05 : 1</td></tr>
+                        <tr><th scope="row">Øvrig tekst</th><td>#2b3d46</td><td>#8595a5</td><td>11.29 : 1</td></tr>
+                        <tr><th scope="row">Tittellinjer</th><td>#ffffff</td><td>#004e8a</td><td>6,94 : 1</td></tr>
+                        <tr><th scope="row">Kildeboks</th><td>#2B3D46</td><td>#D8EAFA</td><td>9,18 : 1</td></tr>
                     </tbody>
                 </table>
-                <p>Noe tekst om overskrifter og diagrammer</p>
+                <p>Overskrifter og diagrammer bruker også disse fargeparene. Kontrastforholdet er likt når tekst og bakgrunnsfargen bytter plass.</p>
             </section>
             <section id="kilder">
                 <h2>Kilder</h2>

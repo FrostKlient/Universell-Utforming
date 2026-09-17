@@ -88,7 +88,7 @@ string urlDekod(const string& tekst) {
             i += 2;
         } else resultat += tekst[i];
     }
-    return resultat
+    return resultat;
 }
 string jsonTekst(const string& tekst) {
     std::ostringstream ut;
@@ -103,9 +103,9 @@ string jsonTekst(const string& tekst) {
 int main(int argc, char* argv[]) {
     try {
         const fs::path rot = fs::absolute(argc > 1 ? fs::path(argv[1]) : fs::current_path());
-        const fs::path nettside = rot / "dist";
+        const fs::path nettside = rot.filename() == "distststst" ? rot : rot / "distststst";
         const string css = lesFil(nettside / "styles.css");
-        const string rotRegel cssRegel(css, ":root");
+        const string rotRegel = cssRegel(css, ":root");
         std::vector<Fargepar> farger;
         for (int i = 1; i <= 3; ++i) {
             string nummer = std::to_string(i);
@@ -159,6 +159,27 @@ int main(int argc, char* argv[]) {
             << ",\n \"articles\": 3,\n \"images_with_alt\": 3,\n \"div_elements\": " << indeks.tagger["div"]
             << ",\n \"local_links\": \"passed\",\n \"color_pairs\": [\n";
         for (size_t i = 0; i < farger.size(); ++i) {
+            const auto& par = farger[i];
+            double forhold = kontrast(par.tekst, par.bakgrunn);
+            std::ostringstream visning;
+            visning << std::fixed << std::setprecision(2) << std::floor(forhold * 100) / 100;
+            string tall = visning.str();
+            std::replace(tall.begin(), tall.end(), '.', ',');
+            rapport << "    {\"element\": " << jsonTekst(par.navn) << ", \"text\": " << jsonTekst(par.tekst)
+            << ", \"background\": " << jsonTekst(par.bakgrunn) << ", \"ratio\": " << std::fixed << std::setprecision(4) << forhold
+            << ", \"display\": " << jsonTekst(tall) << ", \"aa_normal_text\": true}" << (i + 1 < farger.size() ? "," : "") << '\n';
+            std::cout << par.navn << ": " << tall << " : 1\n";
         }
+        rapport << " ]\n}\n";
+        fs::create_directories(rot / "dokumentasjon");
+        std::ofstream ut(rot / "dokumentasjon" / "kontrast-rapport.json", std::ios::binary);
+        ut << rapport.str();
+        ut.close();
+        sjekk(!ut.fail(), "Kunne ikke skrive rapporten");
+        std::cout << "OK: HTML-struktur, lokale lenker, alt-tekster, bildefarger og kontrast.\n";
+        return 0;
+    } catch (const std::exception& feil) {
+        std::cerr << "FEIL: " << feil.what() << '\n';
+        return 1;
     }
 }

@@ -1,0 +1,17 @@
+{
+ "tool": "scripts/kontroller.cpp",
+ "formula": "WCAG 2.x relative luminance",
+ "html_files":1,
+ "articles": 3,
+ "images_with_alt": 3,
+ "div_elements": 0,
+ "local_links": "passed",
+ "color_pairs": [
+    {"element": "Del 1", "text": "#284114", "background": "#D0E4A3", "ratio": 8.2460, "display": "8,24", "aa_normal_text": true},
+    {"element": "Del 2", "text": "#701C42", "background": "#ECC0D5", "ratio": 6.7576, "display": "6,75", "aa_normal_text": true},
+    {"element": "Del 3", "text": "#553810", "background": "#ECD071", "ratio": 7.0569, "display": "7,05", "aa_normal_text": true},
+    {"element": "Meny og bunntekst", "text": "#2B3D46", "background": "#FFFFFF", "ratio": 11.2985, "display": "11,29", "aa_normal_text": true},
+    {"element": "Tittellinjer", "text": "#D8EAFA", "background": "#004E8A", "ratio": 6.9479, "display": "6,94", "aa_normal_text": true},
+    {"element": "Kildeboks", "text": "#2B3D46", "background": "#D8EAFA", "ratio": 9.1837, "display": "9,18", "aa_normal_text": true}
+ ]
+}
